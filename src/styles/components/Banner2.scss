@@ -1,0 +1,37 @@
+.home_hero-section{
+    color: #31326f;
+    padding: 40px 0;
+    position: relative;
+    
+    
+
+    .home_hero-row {
+      align-items: center;
+
+      .row {
+
+        .col {
+          margin-bottom: 15px;
+          padding-right: 15px;
+          padding-left: 15px;
+          flex: 1;
+          max-width: 50%;
+          flex-basis: 50%;
+
+          .home_hero-text-wrapper{
+            .home_hero-subtitle{
+              
+              .home_hero-subtitle{
+                color: black;
+              }
+            }
+          }
+        }
+
+      }
+    }
+}
+
+.space-gap{
+      margin-top: 80px;
+    }
