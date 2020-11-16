@@ -1,0 +1,64 @@
+@import "../Breakpoints.scss";
+
+.service-container{
+  position: relative;
+  width: 100%;
+
+  .service-title{
+    text-align: center;
+    line-height: 1.2;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .service-row{
+    margin-bottom: 50px;
+    justify-content: center;
+    padding: 10px 40%;
+    
+    @include media(">=1200px") {
+      padding: 10px 80px;
+    }
+    @include media("<=tablet") {
+      padding: 10px 20px;
+    }
+    @include media("<=phone") {
+      padding: 10px;
+    }
+
+    .service-col{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      
+      .service-card{
+        width: 150px;
+        height: auto;
+        border-radius: 4px;
+        margin: 10px;
+        padding:10px 40px;
+
+        img{
+          width: 80px;
+          height: auto;
+        }
+        .name{
+          font-size: 28px;
+          font-weight: 700;
+          line-height: .5;
+          margin-bottom: 20px;
+        }
+        .nameDesc{
+          font-size: 18px;
+          line-height: 1.2;
+        }
+
+
+        &:hover{
+          box-shadow:3px 3px 5px 6px #ccc;
+        }
+      }
+    }
+  }
+}

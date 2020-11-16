@@ -1,0 +1,66 @@
+@import "../Breakpoints.scss";
+
+.container-rank_box{
+  position: relative;
+  top: 50px;
+  left: 0;
+  box-sizing: border-box;
+  margin-left: 15%;
+  margin-right: 15%;
+  height: auto;
+  box-shadow: 3px 3px 5px 6px #ccc;
+  background-color: #31326f;
+  border-radius: 20px;
+
+  @include media("<=tablet") {
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  @include media("<=phone") {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .rank-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media("<=phone") {
+      flex-wrap: wrap;
+      width: 100%;
+      align-items:stretch;flex-direction: column;
+    }
+    .rank-col{
+      padding: 40px;
+      text-align: center;
+      color: white;
+      line-height:1;
+
+      @include media("<=tablet") {
+        line-height: 1.0;
+        padding: 20px;
+      }
+
+      h2{
+        font-size: 30px;
+        font-weight: 700;
+        @include media("<=tablet") {
+          font-size: 28px;
+        }
+        @include media("<=phone") {
+          font-size: 40px;
+        }
+      }
+      p{
+        font-size: 16px;
+        @include media("<=tablet") {
+          font-size: 25px;
+        }
+        @include media("<=phone") {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

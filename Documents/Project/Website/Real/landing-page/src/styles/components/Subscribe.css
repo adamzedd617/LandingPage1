@@ -1,0 +1,37 @@
+.footer-subscription {
+  background-color: #31326f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 24px;
+  color: white;
+}
+
+.footer-subscription > p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.footer-subscription-heading {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.footer-subscription-text {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+.footer-input {
+  color: #222;
+  padding: 12px 3px;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 16px;
+  border: 1px solid gray;
+}
